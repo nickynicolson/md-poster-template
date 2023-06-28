@@ -14,7 +14,7 @@ content: build/poster-content.tex
 build/poster.pdf: poster.tex build/poster-content.tex 
 	mkdir -p build
 	cp poster*.tex *.sty *.png build
-	latexmk -f -lualatex -interaction=batchmode -pdf -use-make -cd build/poster
+	latexmk -f -lualatex -interaction=nonstopmode -pdf -use-make -cd build/poster
 
 poster: build/poster.pdf
 
