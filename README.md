@@ -1,5 +1,5 @@
 # md-poster-template
-Template repo to build a latex beamerposter from content authored in markdown
+Template repo to build a latex beamerposter from content authored in markdown. Adapted from [beamerposter example on Overleaf](https://www.overleaf.com/latex/templates/beamerposter-flow-multicolumn/bsypntvtjtvf)
 
 ## How to use
 
