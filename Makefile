@@ -13,9 +13,9 @@ content: build/poster-content.tex
 
 build/poster.pdf: poster.tex build/poster-content.tex 
 	mkdir -p build
-	lualatex --shell-escape --interaction=batchmode --jobname=poster --output-directory=build poster
-	cat build/poster.log
-	
+	cp poster*.tex *.sty *.png build
+	latexmk -f -lualatex -interaction=batchmode -pdf -use-make -cd build/poster
+
 poster: build/poster.pdf
 
 clean:
