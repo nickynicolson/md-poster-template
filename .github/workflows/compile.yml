@@ -1,0 +1,28 @@
+name: Compile poster to PDF
+
+on:
+  workflow_dispatch:
+        
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Update apt and install tex and pandoc 
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-luatex texlive-science-doc texlive-science
+        wget --quiet https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
+        sudo dpkg -i pandoc-2.18-1-amd64.deb
+
+    - name: Build PDF version of poster
+      run: make poster
+      
+    - name Attach built artifact to run 
+      uses: actions/upload-artifact@v3
+      with:
+        name: poster.pdf
+        path: build/poster.pdf
