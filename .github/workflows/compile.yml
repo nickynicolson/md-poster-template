@@ -17,7 +17,6 @@ jobs:
         sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-luatex texlive-science-doc texlive-science
         wget --quiet https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
         sudo dpkg -i pandoc-2.18-1-amd64.deb
-        sudo mkluatexfontdb -vv
 
     - name: Build PDF version of poster
       run: make poster
