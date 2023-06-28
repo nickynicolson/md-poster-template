@@ -34,7 +34,7 @@ Bibliographic reference metadata is included in the file `refs.bib`. Citations a
 #### Using github actions
 
 The repository is set up to use github actions so you can do the compilation completely online without installing latex & associated tools locally. 
-Click on the `actions` tab in your repository then click on the action name <kbd>Compile poster to PDF</kbd>. Click the `Run workflow` dropdown then on the green "Run workflow" button. This wil start the compilation process, and the PDF version of the poster will be attaced to the workflow run as a build artifact.
+Click on the `actions` tab in your repository then click on the action name <kbd>Compile poster to PDF</kbd>. Click the `Run workflow` dropdown then on the green "Run workflow" button. This will start the compilation process, and the PDF version of the poster will be attached to the workflow run as a build artifact.
 
 #### Building on your local machine
 
