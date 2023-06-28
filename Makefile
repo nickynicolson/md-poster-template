@@ -1,4 +1,4 @@
-col_closer="\end{column}\end{columns}"
+col_closer="\\end{column}\\end{columns}"
 
 build/poster-content.tex: poster-content.md refs.bib
 	mkdir -p build
