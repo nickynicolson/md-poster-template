@@ -13,7 +13,7 @@ content: build/poster-content.tex
 
 build/poster.pdf: poster.tex build/poster-content.tex 
 	mkdir -p build
-	latexmk -f -lualatex -interaction=batchmode -pdf -use-make --output-directory=build poster
+	lualatex --shell-escape --interaction=batchmode --jobname=poster --output-directory=build poster
 
 poster: build/poster.pdf
 
