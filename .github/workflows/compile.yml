@@ -21,7 +21,7 @@ jobs:
     - name: Build PDF version of poster
       run: make poster
       
-    - name Attach built artifact to run 
+    - name: Attach built artifact to run 
       uses: actions/upload-artifact@v3
       with:
         name: poster.pdf
