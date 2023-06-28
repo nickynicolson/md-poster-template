@@ -14,7 +14,7 @@ jobs:
     - name: Update apt and install tex and pandoc 
       run: |
         sudo apt-get update -y
-        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-luatex texlive-science-doc texlive-science
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-luatex texlive-science-doc texlive-science latexmk
         wget --quiet https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
         sudo dpkg -i pandoc-2.18-1-amd64.deb
 
